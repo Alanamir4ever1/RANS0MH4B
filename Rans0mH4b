@@ -1,3 +1,15 @@
+-- Автозамена Discord ссылок на Telegram
+local oldGet = game.HttpGet
+game.HttpGet = function(url, ...)
+    local result = oldGet(url, ...)
+    if type(result) == "string" then
+        result = result:gsub("dsc%.gg/abysallhubcontinued", "t.me/rans0mpoproshayka")
+        result = result:gsub("discord%.gg/abysallhubcontinued", "t.me/rans0mpoproshayka")
+        result = result:gsub("dsc%.gg/abysall", "t.me/rans0mpoproshayka")
+        result = result:gsub("discord%.gg/abysall", "t.me/rans0mpoproshayka")
+    end
+    return result
+end
 --	Functions.Notify({Title = "Used For Notifications."})
 
 local LoadStart = tick()
