@@ -1206,7 +1206,7 @@ end
 
 local Window = Library:CreateWindow({
 	Title = "Rans0m H4b",
-	Footer = "dsc.gg/rans0mh4b",
+	Footer = "https://t.me/rans0mpoproshayka",
 	NotifySide = "Right",
 	ShowCustomCursor = false,
 	AutoShow = true,
@@ -1750,7 +1750,7 @@ TimeShowerLabel.BackgroundTransparency = 1
 TimeShowerLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TimeShowerLabel.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
 TimeShowerLabel.TextStrokeTransparency = 0.35
-TimeShowerLabel.Font = Enum.Font.GothamBold
+TimeShowerLabel.Font = Enum.Font.Jura
 TimeShowerLabel.TextSize = 18
 TimeShowerLabel.TextXAlignment = Enum.TextXAlignment.Left
 TimeShowerLabel.Text = "Time: --:--"
